@@ -1,0 +1,21 @@
+.expertise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // @include on-small-desktop {
+  // flex-direction: row;
+  //  justify-content: center;
+  // align-items: center;
+  // }
+
+  &--title {
+    font-family: $main-font-family;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 52.8px;
+    text-align: center;
+    color: #253757;
+  }
+}

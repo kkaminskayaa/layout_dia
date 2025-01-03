@@ -7,4 +7,16 @@
     @include padding-inline;
     @include grid;
   }
+
+  &--second {
+    @include padding-inline;
+
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 72px;
+
+    @include on-tablet {
+      padding: 128px;
+    }
+  }
 }
