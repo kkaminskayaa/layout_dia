@@ -3,9 +3,15 @@
 @import 'typography';
 @import 'blocks/menu';
 @import 'blocks/home-page';
-@import 'blocks/header.scss';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/arrows';
+@import 'blocks/main';
+@import 'blocks/about-us';
+@import 'blocks/section';
 
 body {
   margin: 0;
-  background: $c-gray;
+  background: $gray-color;
+  min-width: 320px;
 }

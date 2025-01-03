@@ -1,0 +1,10 @@
+@use '../utils/mixins' as *;
+
+.section {
+  box-sizing: border-box;
+
+  &--first {
+    @include padding-inline;
+    @include grid;
+  }
+}

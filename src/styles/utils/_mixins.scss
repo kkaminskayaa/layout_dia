@@ -55,3 +55,27 @@
     padding-inline: 707px;
   }
 }
+
+/* grid template */
+
+@mixin grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @include on-tablet {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+
+  @include on-small-desktop {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+}

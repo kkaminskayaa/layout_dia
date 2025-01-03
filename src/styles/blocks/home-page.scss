@@ -1,6 +1,20 @@
+@use '../utils/mixins' as *;
+
 .home-page {
-@include padding-inline;
-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 280px;
+
+  @include padding-inline;
+
+  @include on-small-desktop {
+    grid-column: 1 / 7;
+    width: 558px;
+  }
+
+  @include on-desktop {
+    grid-column: 1 / 8;
+    width: 490px;
+  }
 
   &__title {
     color: $white-color;
@@ -9,22 +23,19 @@ box-sizing: border-box;
     line-height: 62.5px;
     margin: 0;
     padding-block: 48px 32px;
+    font-family: $main-font-family;
 
     @include on-tablet {
-    font-size: 64px;
-    line-height: 68px;
-    padding-block: 56px 24px;
+      font-size: 64px;
+      line-height: 68px;
+      padding-block: 56px 24px;
+      grid-column: 1 / 7;
     }
-
-    @include on-small-desktop {
-    padding-block: 164px 32px;
-    }
-
   }
 
   &__description {
-     margin: 0;
-    font-family: Open Sans;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -32,30 +43,36 @@ box-sizing: border-box;
     padding-block: 0 72px;
 
     @include on-tablet {
-    padding-block: 0 56px;
+      margin-bottom: 56px;
+      width: 362px;
     }
 
     @include on-small-desktop {
-    padding-block: 0 83px;
+      margin-bottom: 84px;
     }
   }
 
   &__button {
     height: 50px;
-    color: $white-color;
     background-color: $main-blue-color;
     border: 1px solid $main-blue-color;
     border-radius: 8px;
     width: 280px;
-    margin-bottom:  48px;
+    margin-bottom: 48px;
 
     @include on-tablet {
       width: 264px;
-      margin-bottom:  147px;
+      margin-bottom: 147px;
     }
 
-     @include on-small-desktop{
-      margin-bottom:  205px;
+    &--text {
+      color: $white-color;
+      font-size: 15px;
+      font-family: $main-font-family;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 22.5px;
+      letter-spacing: 1px;
     }
   }
 }

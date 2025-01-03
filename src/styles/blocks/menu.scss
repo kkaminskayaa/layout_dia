@@ -56,15 +56,20 @@
   &__link {
     display: flex;
     align-items: center;
-    font-family: Poppins, serif;
     font-size: 13px;
     font-weight: 700;
-    line-height: 19px;
+    font-family: Poppins, sans-serif;
+    line-height: 19.5px;
+    letter-spacing: 3px;
     color: $white-color;
     margin-left: 48px;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+
+    &:hover {
+      color: $main-blue-color;
+    }
   }
 }
 
