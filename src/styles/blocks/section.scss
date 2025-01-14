@@ -13,10 +13,21 @@
 
     background-color: #fff;
     border-radius: 30px;
-    padding: 72px;
+    padding-block: 72px;
 
     @include on-tablet {
-      padding: 128px;
+      padding-block: 128px;
+      padding-inline: 140px;
+    }
+  }
+
+  &--third {
+    @include padding-inline;
+
+    padding-block: 120px;
+
+    @include on-tablet {
+      padding-block: 148px;
     }
   }
 }
