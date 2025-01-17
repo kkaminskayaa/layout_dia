@@ -30,4 +30,14 @@
       padding-block: 148px;
     }
   }
+
+  &--forth {
+    @include padding-inline;
+
+    padding-block: 120px;
+
+    @include on-tablet {
+      padding-block: 0 148px;
+    }
+  }
 }
