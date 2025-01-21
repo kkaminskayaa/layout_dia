@@ -63,6 +63,8 @@
     &:hover {
       background-color: #356ef4;
       border: 1px solid #356ef4;
+
+     @include hover(transform, scale(1.1));
     }
 
     @include on-tablet {

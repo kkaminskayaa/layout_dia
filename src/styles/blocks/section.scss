@@ -40,4 +40,37 @@
       padding-block: 0 148px;
     }
   }
+
+  &--fifth {
+    @include padding-inline;
+
+    background:url(../images/Shapes.png);
+    background-color: #fff;
+    padding-block: 72px;
+
+    @include on-tablet {
+      padding-block: 200px;
+    }
+  }
+
+  &--sixth {
+    @include padding-inline;
+
+    @include grid;
+
+    background-color: $dark-grey-color;
+    padding-block: 72px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  &--seventh {
+    @include padding-inline;
+
+    @include grid;
+
+    background-color: $dark-grey-color;
+
+  }
 }
+
