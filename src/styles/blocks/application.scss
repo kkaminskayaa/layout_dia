@@ -21,26 +21,24 @@
       font-weight: 600;
       line-height: 33px;
       text-align: center;
-      color: #6C788B;
+      color: #6c788b;
       margin: 0;
     }
   }
 
-    &__button {
-      height: 50px;
-      background-color: $main-blue-color;
-      border: 1px solid $main-blue-color;
-      border-radius: 8px;
-      width: 280px;
-      box-sizing: border-box;
-      margin-block: 56px 72px;
-      cursor: pointer;
+  &__button {
+    height: 50px;
+    background-color: $main-blue-color;
+    border: 1px solid $main-blue-color;
+    border-radius: 8px;
+    width: 280px;
+    box-sizing: border-box;
+    margin-block: 56px 72px;
+    cursor: pointer;
 
     &:hover {
-     @include hover(transform, scale(1.1));
-  }
-
-
+      @include hover(transform, scale(1.1));
+    }
 
     &--text {
       font-family: $main-font-family;
@@ -51,6 +49,5 @@
       color: $white-color;
       text-decoration: none;
     }
-    }
   }
-
+}

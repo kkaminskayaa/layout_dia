@@ -11,7 +11,7 @@
   border-radius: 30px;
 
   @include on-small-desktop {
-    height: 800px;
+    height: 100%;
   }
 
   &__content {
@@ -22,7 +22,7 @@
     flex-grow: 1;
 
     @include on-small-desktop {
-      height: 800px;
+      height: 100%;
 
       @include grid;
     }

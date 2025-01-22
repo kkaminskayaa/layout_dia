@@ -16,9 +16,13 @@
 @import 'blocks/testimonials';
 @import 'blocks/people';
 @import 'blocks/application';
-@import 'blocks/send-message.scss';
+@import 'blocks/send-message';
 @import 'blocks/contact-us';
 @import 'blocks/footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;

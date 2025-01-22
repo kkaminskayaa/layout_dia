@@ -56,7 +56,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: $white-color;
     height: 264px;
     border-radius: 16px;
     gap: 24px;
@@ -110,7 +110,7 @@
 
   &__paragraph {
     color: #6c788b;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $text-font-family;
     font-size: 13px;
     font-weight: 600;
     line-height: 19.5px;

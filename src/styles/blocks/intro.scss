@@ -15,14 +15,19 @@
 
   &__images {
     &--image {
-      opacity: 0;
+      opacity: 1;
       position: absolute;
       height: 390px;
       border-radius: 30px;
       width: 100%;
-      object-fit: cover;
       bottom: 0;
       right: 0;
+      transition: all 0.5s;
+      object-fit: cover;
+
+      // &--active {
+      //   opacity: 1;
+      // }
 
       @include on-small-desktop {
         height: 100%;
@@ -33,12 +38,12 @@
   }
 
   &__container {
-    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
     padding-inline: 20px;
+    position: relative;
 
     @include on-tablet {
       padding-inline: 40px;
@@ -65,7 +70,7 @@
     margin-bottom: 24px;
 
     &--title {
-      font-family: Poppins, sans-serif;
+      font-family: $main-font-family;
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 3px;
@@ -74,7 +79,7 @@
     }
 
     &--description {
-      font-family: 'Open Sans', sans-serif;
+      font-family: $text-font-family;
       font-size: 14px;
       font-weight: 400;
       text-align: left;
